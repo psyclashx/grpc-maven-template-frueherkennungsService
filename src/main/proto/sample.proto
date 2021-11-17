@@ -1,0 +1,5 @@
+// This is a protobuf sample for a "sample service"
+syntax = "proto3";
+package your.pkg;
+option java_multiple_files = true;
+//import "google/protobuf/timestamp.proto"; // see link "Protocol Buffers Well-Known Types" in README for pre-defined types
