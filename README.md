@@ -5,7 +5,7 @@
 - [gRPC Project Site](https://grpc.io)
 - [gRPC Basic Java Tutorial](https://grpc.io/docs/languages/java/basics/)
 - [grpc-java project on Github (with dependencies)](https://github.com/grpc/grpc-java/blob/master/README.md)
-- [Protocol Buffers Version 3 Language Specification](Protocol Buffers Version 3 Language Specificationhttps://developers.google.com/protocol-buffers/docs/reference/proto3-spec)
+- [Protocol Buffers Version 3 Language Specification](https://developers.google.com/protocol-buffers/docs/reference/proto3-spec)
 - [Protocol Buffers Well-Known Types](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf)
 - [One of many Youtube tutorials](https://www.youtube.com/watch?v=DU-q5kOf2Rc)
 
