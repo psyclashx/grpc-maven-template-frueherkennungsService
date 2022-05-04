@@ -2,6 +2,7 @@ package de.othr.grpc;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import io.grpc.protobuf.services.ProtoReflectionService;
 
 public class SampleServer {
 
@@ -11,6 +12,7 @@ public class SampleServer {
     public static void main(String[] args) {
         /*
         Server server = ServerBuilder.forPort(SAMPLE_GRPC_PORT)
+                .addService(ProtoReflectionService.newInstance()) // For easier testing with clients like grpcui or grpcurl; remove for production
                 .addService(new MyServiceImpl())
                 .build();
 
