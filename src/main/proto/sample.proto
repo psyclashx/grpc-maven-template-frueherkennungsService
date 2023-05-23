@@ -2,4 +2,22 @@
 syntax = "proto3";
 package your.pkg;
 option java_multiple_files = true;
-//import "google/protobuf/timestamp.proto"; // see link "Protocol Buffers Well-Known Types" in README for pre-defined types
+import "google/protobuf/timestamp.proto"; // see link "Protocol Buffers Well-Known Types" in README for pre-defined types
+
+
+message Bericht {
+  google.protobuf.Timestamp timestamp = 1;
+  string diagnose = 2;
+  string weiteresVorgehen = 3;
+}
+
+message Roentgenbild {
+  google.protobuf.Timestamp timestamp = 1;
+  string patientenName = 2;
+  bytes rawData = 3;
+}
+message Void{}
+
+service FrueherkennungsService {
+  rpc analysieren(stream Roentgenbild) returns (stream Bericht);
+}

@@ -86,7 +86,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>de.othr.grpc.SampleServer</mainClass>
+                    <mainClass>de.othr.grpc.server.SampleServer</mainClass>
                 </configuration>
             </plugin>
 
